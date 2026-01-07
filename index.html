@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremiah Joseph Arome | Creative Developer</title>
+    <meta name="title" content="Jeremiah Joseph Arome | Creative Developer Portfolio">
+    <meta name="description" content="Portfolio of Jeremiah Joseph Arome - Specializing in Web Development, UI/UX Design, and Brand Identity for platforms like Obiwezy and Cokodeal.">
 
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/"> <meta property="og:title" content="Jeremiah Joseph Arome | Creative Developer">
+    <meta property="og:description" content="Building high-performance web applications and digital experiences. Explore my latest work.">
+    <meta property="og:image" content="https://yourdomain.com/preview-image.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="Jeremiah Joseph Arome | Creative Developer">
+    <meta property="twitter:description" content="Building high-performance web applications and digital experiences. Explore my latest work.">
+    <meta property="twitter:image" content="https://yourdomain.com/preview-image.jpg">
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -86,7 +96,13 @@
             border: none; cursor: pointer; display: none;
             z-index: 2000; transition: 0.3s; box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
         }
-
+        [data-theme="light"] .modal-content {
+    background: #ffffff !important;
+    color: #121212 !important;
+}
+[data-theme="light"] .btn-close-white {
+    filter: none; /* Dark close button for light theme */
+}
         .hero-section {
             height: 85vh;
             background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
@@ -95,7 +111,12 @@
             display: flex; align-items: center; justify-content: center; text-align: center;
             border-bottom: 5px solid var(--accent-purple);
         }
-
+            .about-text {
+    line-height: 1.8;
+}
+.tracking-widest {
+    letter-spacing: 3px !important;
+}
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
@@ -170,32 +191,32 @@
 
     <main class="container py-5">
         
-        <section id="services" class="py-5 reveal">
-            <h2 class="mb-5 small tracking-widest fw-bold text-center" style="color: var(--accent-purple)">EXPERTISE</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="project-card p-4 h-100 text-center">
-                        <i class="fa-solid fa-pen-nib mb-4" style="font-size: 2.5rem; color: var(--accent-purple);"></i>
-                        <h4 class="fw-bold mb-3">Graphic Design</h4>
-                        <p class="text-secondary small">Visual storytelling, brand identities, and high-impact marketing visuals.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card p-4 h-100 text-center">
-                        <i class="fa-solid fa-code mb-4" style="font-size: 2.5rem; color: var(--accent-purple);"></i>
-                        <h4 class="fw-bold mb-3">Web Development</h4>
-                        <p class="text-secondary small">Developing responsive and interactive web applications with modern frameworks.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card p-4 h-100 text-center">
-                        <i class="fa-solid fa-layer-group mb-4" style="font-size: 2.5rem; color: var(--accent-purple);"></i>
-                        <h4 class="fw-bold mb-3">UI/UX Design</h4>
-                        <p class="text-secondary small">Prototyping user-friendly interfaces in Figma to bridge the gap between technology and users.</p>
-                    </div>
-                </div>
+       <section id="services" class="py-5 reveal">
+    <h2 class="mb-5 small tracking-widest fw-bold text-center" style="color: var(--accent-purple)">EXPERTISE</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="project-card p-4 h-100 text-center">
+                <i class="fa-solid fa-wand-magic-sparkles mb-4" style="font-size: 2.5rem; color: var(--accent-purple);"></i>
+                <h4 class="fw-bold mb-3">Brand Identity</h4>
+                <p class="text-secondary small">Crafting memorable visual stories and professional logos that help businesses stand out in a crowded market.</p>
             </div>
-        </section>
+        </div>
+        <div class="col-md-4">
+            <div class="project-card p-4 h-100 text-center">
+                <i class="fa-solid fa-laptop-code mb-4" style="font-size: 2.5rem; color: var(--accent-purple);"></i>
+                <h4 class="fw-bold mb-3">Web Solutions</h4>
+                <p class="text-secondary small">Building high-performance, responsive web applications like cooperative platforms and e-commerce systems.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="project-card p-4 h-100 text-center">
+                <i class="fa-solid fa-mobile-screen-button mb-4" style="font-size: 2.5rem; color: var(--accent-purple);"></i>
+                <h4 class="fw-bold mb-3">UI/UX Design</h4>
+                <p class="text-secondary small">Designing intuitive user interfaces in Figma with a focus on ease of use, accessibility, and modern aesthetics.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="about" class="py-5 mt-5 reveal">
             <div class="row">
@@ -221,10 +242,13 @@
                 </div>
 
                 <div class="col-md-7 offset-md-1">
-                    <h2 class="small tracking-widest fw-bold mb-4" style="color: var(--accent-purple)">ABOUT ME</h2>
-                    <p class="text-secondary mb-5">I bridge the gap between complex design problems and technical solutions. Based in Nigeria, I specialize in crafting high-performance web applications and pixel-perfect brand identities.</p>
-                    
-                    <h6 class="fw-bold mb-4 small tracking-widest text-uppercase">Technical Proficiency</h6>
+                   <h2 class="small tracking-widest fw-bold mb-4" style="color: var(--accent-purple)">ABOUT ME</h2>
+<p class="text-secondary mb-4">
+    I am a <strong>Creative Developer</strong> based in Nigeria, dedicated to bridging the gap between complex design problems and functional technical solutions. With a background spanning both graphic design and full-stack web development, I don't just build websites—I build digital experiences that solve real-world problems.
+</p>
+<p class="text-secondary mb-5">
+    Whether it's digitizing financial systems for ministries or crafting pixel-perfect brand identities for startups, my goal is to deliver excellence through clean code and intentional design.
+</p>
                     
                     <div class="mb-4 skill-item">
                         <div class="d-flex justify-content-between mb-1">
@@ -250,7 +274,7 @@
                         <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
                     </div>
 
-                    <a href="my-cv.pdf" download="Jeremiah_Arome_CV" class="btn btn-purple d-inline-flex align-items-center justify-content-center" style="width: auto; padding: 12px 25px;">
+                    <a href="jeremiah joseph cv.pdf" download="Jeremiah_Arome_CV" class="btn btn-purple d-inline-flex align-items-center justify-content-center" style="width: auto; padding: 12px 25px;">
                         <i class="fa-solid fa-file-arrow-down me-2"></i> DOWNLOAD CV
                     </a>
                 </div>
@@ -258,28 +282,42 @@
         </section>
 
         <section id="work" class="py-5 mt-5 reveal">
-            <h2 class="mb-5 small tracking-widest fw-bold text-center" style="color: var(--accent-purple)">PORTFOLIO</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="project-card h-100">
-                        <div class="project-img-wrapper"><div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&w=500')"></div></div>
-                        <div class="p-3"><p class="mb-0 fw-bold">Brand Identity System</p></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card h-100">
-                        <div class="project-img-wrapper"><div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&w=500')"></div></div>
-                        <div class="p-3"><p class="mb-0 fw-bold">E-Commerce Platform</p></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card h-100">
-                        <div class="project-img-wrapper"><div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&w=500')"></div></div>
-                        <div class="p-3"><p class="mb-0 fw-bold">Corporate UI Design</p></div>
-                    </div>
+    <h2 class="mb-5 small tracking-widest fw-bold text-center" style="color: var(--accent-purple)">PORTFOLIO</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="project-card h-100" data-bs-toggle="modal" data-bs-target="#brandModal" style="cursor: pointer;">
+                <div class="project-img-wrapper"><div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1523474253046-2cd2c788f3ff?auto=format&w=500')"></div></div>
+                <div class="p-3">
+                    <p class="mb-1 fw-bold">Cokodeal Brand Identity</p>
+                    <p class="text-secondary small mb-2">Visual language for Africa's largest trade platform.</p>
+                    <span class="text-purple small">View Case Study <i class="fa-solid fa-plus ms-1"></i></span>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="col-md-4">
+            <div class="project-card h-100" data-bs-toggle="modal" data-bs-target="#churchProjectModal" style="cursor: pointer;">
+                <div class="project-img-wrapper"><div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&w=500')"></div></div>
+                <div class="p-3">
+                    <p class="mb-1 fw-bold">MMMI Cooperative Platform</p>
+                    <p class="text-secondary small mb-2">Custom FinTech solution for daily savings.</p>
+                    <span class="text-purple small">View Case Study <i class="fa-solid fa-plus ms-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="project-card h-100" data-bs-toggle="modal" data-bs-target="#ecommerceModal" style="cursor: pointer;">
+                <div class="project-img-wrapper"><div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&w=500')"></div></div>
+                <div class="p-3">
+                    <p class="mb-1 fw-bold">Obiwezy ERP Platform</p>
+                    <p class="text-secondary small mb-2">Enterprise Resource Planning & E-commerce UI.</p>
+                    <span class="text-purple small">View Case Study <i class="fa-solid fa-plus ms-1"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="contact" class="py-5 mt-5 reveal">
             <div class="row justify-content-center text-center">
@@ -395,5 +433,114 @@
   });
 }
     </script>
+    <div class="modal fade" id="churchProjectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="background: var(--bg-card); border: 1px solid var(--accent-purple); color: var(--text-main);">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold">Project Case Study</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&w=800" class="img-fluid rounded border border-secondary" alt="Project Screenshot">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-purple fw-bold">MMMI Cooperative</h3>
+                        <p class="small text-muted mb-4">Financial Management System</p>
+                        
+                        <h6 class="fw-bold small text-uppercase tracking-widest">The Challenge</h6>
+                        <p class="small text-secondary">Transitioning a church ministry from manual paper-based record-keeping to a secure, digital daily savings platform.</p>
+                        
+                        <h6 class="fw-bold small text-uppercase tracking-widest mt-4">Key Features</h6>
+                        <ul class="small text-secondary ps-3">
+                            <li>Real-time contribution tracking</li>
+                            <li>Personalized member dashboards</li>
+                            <li>Admin panel for fund reconciliation</li>
+                            <li>SMS/Email notifications for deposits</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4" style="background-color: var(--border-color); opacity: 0.5;">
+                <div class="text-center pb-3">
+                    <a href="https://cooperative.mountainmovingministryintl.org" target="_blank" class="btn btn-purple px-5" style="width: auto;">
+                        VISIT LIVE SITE <i class="fa-solid fa-external-link ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="brandModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="background: var(--bg-card); border: 1px solid var(--accent-purple); color: var(--text-main);">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold">Project Case Study</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <img src="https://images.unsplash.com/photo-1523474253046-2cd2c788f3ff?auto=format&w=800" class="img-fluid rounded border border-secondary" alt="Cokodeal Branding">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-purple fw-bold">Cokodeal</h3>
+                        <p class="small text-muted mb-4">Brand Identity & Visual Strategy</p>
+                        <h6 class="fw-bold small text-uppercase tracking-widest">The Challenge</h6>
+                        <p class="small text-secondary">Redesigning the visual presence of a Pan-African trade platform to bridge the gap between local producers and global buyers.</p>
+                        <h6 class="fw-bold small text-uppercase tracking-widest mt-4">Key Deliverables</h6>
+                        <ul class="small text-secondary ps-3">
+                            <li>Brand Guidelines & Typography</li>
+                            <li>Digital Marketing Assets</li>
+                            <li>User-centric Interface Elements</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4" style="background-color: var(--border-color); opacity: 0.5;">
+                <div class="text-center pb-3">
+                    <a href="https://cokodeal.com" target="_blank" class="btn btn-purple px-5" style="width: auto;">
+                        VISIT COKODEAL <i class="fa-solid fa-external-link ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ecommerceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="background: var(--bg-card); border: 1px solid var(--accent-purple); color: var(--text-main);">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold">Project Case Study</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&w=800" class="img-fluid rounded border border-secondary" alt="Obiwezy ERP">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-purple fw-bold">Obiwezy ERP</h3>
+                        <p class="small text-muted mb-4">E-commerce & Enterprise Solutions</p>
+                        <h6 class="fw-bold small text-uppercase tracking-widest">The Challenge</h6>
+                        <p class="small text-secondary">Optimizing a high-traffic ERP system for mobile gadgets and retail management, ensuring fast load times and secure transactions.</p>
+                        <h6 class="fw-bold small text-uppercase tracking-widest mt-4">Key Achievements</h6>
+                        <ul class="small text-secondary ps-3">
+                            <li>Optimized Inventory Management UI</li>
+                            <li>Seamless E-commerce Checkout Flow</li>
+                            <li>Database Performance Tuning</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4" style="background-color: var(--border-color); opacity: 0.5;">
+                <div class="text-center pb-3">
+                    <a href="https://erp.obiwezy.com/" target="_blank" class="btn btn-purple px-5" style="width: auto;">
+                        VIEW ERP SYSTEM <i class="fa-solid fa-cart-shopping ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
